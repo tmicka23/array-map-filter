@@ -26,6 +26,7 @@ Expected OUTPUT for this sample:
 */
 
 function keepStarks(names) {
+  return names.filter(name => name.includes("Stark"));
 }
 
 // DON'T TOUCH THIS!
