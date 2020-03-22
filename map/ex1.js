@@ -27,6 +27,10 @@ Expected OUTPUT for this sample array:
 */
 
 function getStringsLength(strings) {
+  const newString = strings.map(
+    str => `${str} contains ${str.length} characters`
+  );
+  return newString;
 }
 
 // If you need, you can always visualize the result with a console.log.
@@ -34,8 +38,9 @@ function getStringsLength(strings) {
 // console.log INSIDE the function).
 // Instead of running `npm test`, you can then use `node map/ex1`
 // (you still need to run `npm test` to make sure you did right).
+// const felins = ["Cat", "Lion", "Tiger", "Jaguar", "Leopard"];
 
-// console.log(getStringsLength(['Cat', 'Lion', 'Tiger', 'Jaguar', 'Leopard']));
+// console.log(getStringsLength(felins));
 
 // DON'T TOUCH THIS!
 module.exports = getStringsLength;
