@@ -62,7 +62,7 @@ Expected OUTPUT for this sample:
  */
 
 function getMoviesFreshness(movies) {
-  const newMovies = movies.map(movie => {
+  return movies.map(movie => {
     if (movie.rating < 60) {
       movie.label = "rotten";
       return movie;
@@ -74,7 +74,6 @@ function getMoviesFreshness(movies) {
       return movie;
     }
   });
-  return newMovies;
 }
 
 // DON'T TOUCH THIS!
