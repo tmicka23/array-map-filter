@@ -65,25 +65,13 @@ function getMoviesFreshness(movies) {
   const newMovies = movies.map(movie => {
     if (movie.rating < 60) {
       movie.label = "rotten";
-      return (movie = {
-        name: movie.name,
-        rating: movie.rating,
-        label: movie.label
-      });
+      return movie;
     } else if (movie.rating >= 60 && movie.rating <= 75) {
       movie.label = "fresh";
-      return (movie = {
-        name: movie.name,
-        rating: movie.rating,
-        label: movie.label
-      });
+      return movie;
     } else {
       movie.label = "certified fresh";
-      return (movie = {
-        name: movie.name,
-        rating: movie.rating,
-        label: movie.label
-      });
+      return movie;
     }
   });
   return newMovies;
